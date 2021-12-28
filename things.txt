@@ -1,0 +1,10 @@
+; factorial function defintition in lisp to test code
+
+(define !
+  (lambda (n)
+    (if
+      (= n 0)
+      1
+      (* n (! (- n 1))))))
+
+( ! 5 )
